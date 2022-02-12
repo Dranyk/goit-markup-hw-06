@@ -214,6 +214,15 @@ address {
     align-items: baseline;
 }
 
+.container-adress {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 1200px;
+    padding-top: 48px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 .actual-address {
     color: white;
@@ -284,6 +293,63 @@ address {
 .join-link:focus {
     background-color: var(--accent-color);
     color: #fff;
+}
+
+.footer .subscription {
+    width: 570px;
+}
+
+.subscription .form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.subscription .join-in {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.join-mail {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    background-color: #2f303a;
+    padding-left: 12px;
+    color: var(--primary-text-color);
+}
+
+.subscription .button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 900;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+    overflow: hidden;
+    border: 0em;
+}
+
+.icon-send {
+    position: absolute;
+    right: 18px;
+    margin-left: 10px;
+    top: 50%;
+    transform: translatey(-50%);
 }
 
 /* hero */
@@ -708,6 +774,10 @@ label {
     background-color: #fff;
 }
 
+.close-button:hover,
+.close-button:focus {
+    fill: var(--accent-color);
+}
 
 .close-button {
     padding: 0;
@@ -804,6 +874,40 @@ label {
     top: 20px;
     left: 16px;
     transition: transform 250ms linear;
+}
+
+.field-polisy .checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+  
+.field-polisy .icon-checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    border: 2px solid #2a2a2a;
+    border-radius: 4px;
+    transition: transform 250ms linear;
+}
+  
+.icon-check{
+    opacity: 0;
+}
+
+.icon-check:hover{
+    opacity: 1;
+}
+
+.checkbox-link {
+    color: var(--accent-color);
+    text-decoration: underline;
 }
 
 .field-polisy {
