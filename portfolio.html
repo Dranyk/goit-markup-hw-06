@@ -176,52 +176,66 @@
 
     <footer class="footer">
         <div class="container footer-container">
-            <div>
-                <a class="logo" href=""><span class="accent">Web</span>Studio</a>
-                <address>
-                    <ul class="contact-footer">
-                        <li class="item"><a href="https://goo.gl/maps/sERGqYDvzHYtQd6Q8" target="_blank" class="actual-address">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="item"><a href="mailto:info@example.com" class="contact">info@example.com</a></li>
-                        <li class="item"><a href="tel:+380991111111" class="contact">+38 099 111 11 11</a></li>
+            <div class="container-adress">
+                <div>
+                    <a class="logo" href=""><span class="accent">Web</span>Studio</a>
+                    <address>
+                        <ul class="contact-footer">
+                            <li class="item"><a href="https://goo.gl/maps/sERGqYDvzHYtQd6Q8" target="_blank" class="actual-address">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li class="item"><a href="mailto:info@example.com" class="contact">info@example.com</a></li>
+                            <li class="item"><a href="tel:+380991111111" class="contact">+38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                
+                <div class="join">
+                    <p class="text">присоединяйтесь</p>
+                    <ul class="social social-join">
+                        <li class="join-item">
+                            <a href="https://www.instagram.com" class="join-link">
+                                <svg class="join-icon" height="20px" width="20px">
+                                    <use href="/goit-markup-hw-04/images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="join-item">
+                            <a href="https://twitter.com/" class="join-link">
+                                <svg class="join-icon" height="20px" width="20px">
+                                    <use href="/goit-markup-hw-04/images/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="join-item">
+                            <a href="https://www.facebook.com/" class="join-link">
+                                <svg class="join-icon" height="20px" width="20px">
+                                    <use href="/goit-markup-hw-04/images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="join-item">
+                            <a href="https://www.linkedin.com/" class="join-link">
+                                <svg class="join-icon" height="20px" width="20px">
+                                    <use href="/goit-markup-hw-04/images/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
-            </div>
-            
-            <div class="join">
-                <p class="text">присоединяйтесь</p>
-                <ul class="social social-join">
-                    <li class="join-item">
-                        <a href="https://www.instagram.com" class="join-link">
-                            <svg class="join-icon" height="20px" width="20px">
-                                <use href="/goit-markup-hw-04/images/sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
+                </div>
 
-                    <li class="join-item">
-                        <a href="https://twitter.com/" class="join-link">
-                            <svg class="join-icon" height="20px" width="20px">
-                                <use href="/goit-markup-hw-04/images/sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="join-item">
-                        <a href="https://www.facebook.com/" class="join-link">
-                            <svg class="join-icon" height="20px" width="20px">
-                                <use href="/goit-markup-hw-04/images/sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="join-item">
-                        <a href="https://www.linkedin.com/" class="join-link">
-                            <svg class="join-icon" height="20px" width="20px">
-                                <use href="/goit-markup-hw-04/images/sprite.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                <div class="subscription">
+                    <form class="form js-speaker-form">
+                    <label for="mail" class="join-in">подписаться на рассылку</label>
+                    <input class="join-mail" type="email" name="mail" id="mail" placeholder="E-mail" />
+                    <button type="submit" class="button">Подписаться
+                        <svg class="icon-send" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>

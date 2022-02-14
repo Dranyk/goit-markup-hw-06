@@ -219,9 +219,6 @@ address {
     justify-content: space-between;
     align-items: baseline;
     width: 1200px;
-    padding-top: 48px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .actual-address {
@@ -876,34 +873,35 @@ label {
     transition: transform 250ms linear;
 }
 
-.field-polisy .checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
   
+.checkbox {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    position: absolute;
+}
+
 .field-polisy .icon-checkbox {
     display: inline-block;
     width: 16px;
-    height: 16px;
+    height: 15px;
     margin-right: 5px;
-    border: 2px solid #2a2a2a;
+    border: 2px solid #212121;
     border-radius: 4px;
     transition: transform 250ms linear;
 }
-  
-.icon-check{
-    opacity: 0;
-}
 
-.icon-check:hover{
-    opacity: 1;
+.checkbox:checked + .icon-checkbox {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    background-image: url(../images/icon-check.svg);
+    background-origin: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+  
+
 
 .checkbox-link {
     color: var(--accent-color);
